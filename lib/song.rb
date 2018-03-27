@@ -11,16 +11,19 @@ class Song
   #  @artist_name = artist_name
   # end
 
-  def Song.create
-    song = Song.new
+  def self.create
+    song = self.new
     song.save
     song
   end
 
-  def Song.new_by_name(name)
-    song = Song.new
+  def self.new_by_name(name)
+    song = self.new
     song.name = name
     song
+  end
+
+  def self.create_by_name
   end
 
   def save
