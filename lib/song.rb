@@ -31,11 +31,11 @@ class Song
 
   def self.find_or_create_by_name(string)
     if self.find_by_name(string) == string
-      self.find_by_name(string)
+      s = self.find_by_name(string)
     else
       s = self.create_by_name(string)
-      s.string
     end
+    s
   end
 
   def save
