@@ -33,8 +33,8 @@ class Song
     if self.find_by_name(string) == string
       self.find_by_name(string)
     else
-      self.create_by_name(string)
-      
+      song = self.create_by_name(string)
+      song
     end
   end
 
