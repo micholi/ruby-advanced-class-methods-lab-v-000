@@ -44,8 +44,9 @@ class Song
   end
 
   def self.new_from_filename(filename)
-    s = file.basename(filename, ".mp3")
-    
+
+  file.basename(filename, ".mp3")
+
   end
 
   def save
