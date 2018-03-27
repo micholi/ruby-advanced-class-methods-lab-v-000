@@ -51,7 +51,11 @@ class Song
   end
 
   def self.create_from_filename(mp3_file)
-    
+    s = self.new
+    s.name = File.basename(mp3_file, ".mp3").split(" - ")[1]
+    s.artist_name = File.basename(mp3_file, ".mp3").split(" - ")[0]
+    s.save
+    s
   end
 
   def save
