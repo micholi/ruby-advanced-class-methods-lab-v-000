@@ -36,7 +36,7 @@ class Song
     #  self.create_by_name(string)
 
     #end
-self.create_by_name(string) unless self.find_by_name(string)
+self.create_by_name(string) unless self.find_by_name(string) == string
   end
 
   def save
