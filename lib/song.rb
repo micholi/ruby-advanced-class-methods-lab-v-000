@@ -35,8 +35,7 @@ class Song
   end
 
   def self.find_or_create_by_name(string)
-    @@all.detect do |s|
-      if s == string
+      if self.find_by_name == string
         song
       else
         self.create_by_name
