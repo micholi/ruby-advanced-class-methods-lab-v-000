@@ -30,7 +30,7 @@ class Song
   end
 
   def self.find_or_create_by_name(string)
-    if self.find_by_name(string) == nil
+    if !self.find_by_name(string)
 
     #  song = self.find_by_name(string)
     #  song.name
