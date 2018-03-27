@@ -36,7 +36,7 @@ class Song
     #  song.name
     #else
       self.create_by_name(string)
-      eslse
+      else
       self.find_by_name(string)
     end
   end
