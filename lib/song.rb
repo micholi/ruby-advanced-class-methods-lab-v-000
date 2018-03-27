@@ -19,6 +19,7 @@ class Song
 
   def Song.new_by_name(name)
     name = Song.new
+    song
   end
 
   def save
